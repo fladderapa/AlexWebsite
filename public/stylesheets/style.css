@@ -1,0 +1,491 @@
+html, body {
+font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+width: 100%;
+}
+
+h1{
+  font-weight: 300;
+  font-size: 2.8em;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+
+}
+
+.maintron{
+  position: relative;
+  overflow: hidden;
+
+}
+
+.maintron h1{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.maintron h2{
+  color: white;
+  line-height: 46px;
+  margin-top: 0px;
+  font-size: 1.8em;
+  margin-bottom: 0px;
+  font-weight: 300;
+}
+
+
+h3{
+  font-size: 1.5em;
+  line-height: 1.6em;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #636466;
+}
+
+h5{
+  color: #848484;
+  font-size: 1.2em;
+}
+
+
+p{
+  color: #55555c;
+  font-size: 1.1em;
+  line-height: 1.6em;
+  font-weight: 300;
+  font-family: 'Lato', sans-serif;
+  padding-top: 10px;
+  font-style: normal;
+  text-align: center;
+}
+
+.fa-angle-right{
+  color: #F28677;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.container {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.button{
+    font-size: 1.3em;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: 2px solid #848484;
+    color: #848484;
+    border-radius: 3px;
+    padding: .9em 1.8em .8em;
+    box-shadow: none;
+    margin-top: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-shadow: none;
+    background-image: none;
+    line-height: 1;
+    -webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    transition: all .1s ease-in;
+
+}
+
+.button:hover{
+  padding: .9em 2.8em .8em;
+  text-decoration: none;
+  color: #848484;
+  cursor: pointer;
+
+}
+
+.flip {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 48px;
+  position: relative;
+  top: 16px;
+  -moz-perspective: 500;
+  -webkit-perspective: 500;
+  perspective: 500;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flip span {
+  font-weight: 600;
+  display: block;
+  width: auto;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  position: absolute;
+  top: -20px;
+  left: 0;
+}
+.flip span.set {
+  top: 0;
+  opacity: 1;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
+.flip span.down {
+  top: 40px;
+  opacity: 0;
+  -moz-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
+  -moz-transform: rotateX(-90deg);
+  -ms-transform: rotateX(-90deg);
+  -webkit-transform: rotateX(-90deg);
+  transform: rotateX(-90deg);
+}
+
+.ingress{
+	font-size: 1.2em;
+	padding-top: 20px;
+}
+
+.icons{
+  display: none;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+ .fill-text{
+  color: #887982;
+  background: -webkit-linear-gradient(transparent, transparent),
+      url("/images/purple.svg") repeat;    
+  background: -o-linear-gradient(transparent, transparent),
+    url("/images/purple.svg") repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  
+}
+
+
+ .fill-text2{
+  color: #887982;
+  background: -webkit-linear-gradient(transparent, transparent),
+    url("/images/purple2.svg") repeat;
+  background: -o-linear-gradient(transparent, transparent),
+    url("/images/purple2.svg") repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*SECTIONS*/
+.section-story, .section-header, .section-contact, .section-project{
+	padding-top: 6.250em;
+	padding-bottom: 6.250em;
+  padding-left: 0.313em;
+  padding-right: 0.313em;
+}
+
+ .section-cv{
+  padding-bottom: 9.375em;
+}
+
+.section-project{
+  background-color: #f7f7f7;
+
+}
+
+.section-project  h1{
+    font-size: 4.2em !important;
+    color: #55555c !important;
+    margin-bottom: 50px;
+}
+
+
+.size-icons{
+  font-size: 1.4em !important;
+}
+
+.section-project p{
+  text-align: left;
+  margin-bottom: 30px;
+  color: #636466 !important;
+}
+
+.section-education{
+  padding-bottom: 115px;
+}
+
+  .section-project{
+    padding-top: 100px;
+    padding-bottom: 115px;
+  }
+
+.section-contact i {
+  padding: 25px;
+}
+
+
+.cards{
+margin-top: 10px;
+margin-bottom: 20px;
+}
+
+/*CARDS*/
+
+.maintron{
+  	position: relative;
+  	
+}
+
+.maintron .container{
+	padding-bottom: 7%;
+  padding-top: 10%;
+  position:relative;
+  z-index: 3;
+}
+
+.maintron h1{
+	color: white !important;
+	opacity: 0.9;
+  position:relative;
+}
+
+
+video {
+position: absolute;
+right: 0;
+bottom: 0;
+top: 0;
+left: 0;
+width: 100%;
+background-size: cover;
+z-index: 1;
+}
+
+.fa{
+  display: inline !important;
+}
+
+.filter{
+	top: 0;
+	left: 0;
+  height: 100%;
+  width: 100%;
+	position: absolute;
+	z-index: 2;
+	color: #887982;
+	background-color: #887982;
+  background:url("/images/purple.svg") 0 0 / auto 0 repeat-x fixed;
+	opacity: 0.7;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+/*MENU*/
+.menu{
+	height: 70px;
+	text-align: center !important;
+  width:100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.menu li {
+   display:block;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   right:50%;
+}
+
+.menu ul {
+	clear:left;
+   float:left;
+   list-style:none;
+   margin:0;
+   padding:0;
+   position:relative;
+   left:50%;
+   text-align:center;
+}
+
+.menu a {
+	display:block;
+   margin:0 0 0 1px;
+   padding: 25px 15px 25px 15px;
+   text-decoration:none;
+  font-size: 18px;
+  color: #636466;
+}
+
+.menu a:hover {
+	cursor: pointer;
+   text-decoration:none;
+   color: #D3D3D3 !important;
+}
+
+#email {
+  font-size: 1.1em;
+}
+.section-contact a:hover {
+  cursor: pointer;
+}
+
+.section-contact i:hover {
+  cursor: pointer;
+}
+
+ a:focus {
+  text-decoration: none !important;
+  color: #636466 !important;
+ }
+
+@media only screen and (min-width : 450px) {
+
+  .maintron .container {
+    padding-bottom: 15%;
+    padding-top: 18%;
+  }
+
+}
+
+@media only screen and (min-width : 600px) {
+
+  .maintron .container{
+    padding-bottom: 21%;
+  }
+
+  .flip{
+    top: 10px;
+  }
+
+  .maintron h1{
+    font-size: 3.4em !important;
+    line-height: 1.15 !important;
+    margin-bottom: 10px;
+  
+  }
+
+  .card-container {
+    padding: 40px;
+}
+
+.maintron h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 40px !important;
+}
+
+  .ingress{
+    font-size: 1.4em;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+  .section-story, .section-header, .section-contact {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+}
+
+  .section-education{
+    padding-bottom: 165px;
+  }
+
+  .section-project{
+    padding-top: 150px;
+    padding-bottom: 165px;
+  }
+}
+
+@media only screen and (min-width : 760px) {
+   .maintron .container{
+    padding-top: 20%;
+    padding-bottom: 18%;
+}
+
+.menu a {
+  padding: 25px 50px 25px 50px;
+}
+
+  h1{
+    font-size: 4em;
+  }
+
+  .icons{
+      margin-top: 50px;
+      display: block;
+  }
+
+    .ingress{
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (min-width : 992px) {
+   .maintron .container{
+    padding-top: 17%;
+    padding-bottom: 12%;
+}
+
+  h1{
+    font-size: 4.8em !important;
+  }
+  .maintron h1{
+    font-size: 4.8em !important;
+  }
+
+    .ingress{
+    font-size: 2em;
+  }
+}
+
+
+
+
+
+
+

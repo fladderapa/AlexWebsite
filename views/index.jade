@@ -1,0 +1,151 @@
+extends layout
+
+block content
+	.section.maintron
+		.filter
+		video#bgvid(autoplay='',  muted, loop='', poster='/images/poster.jpg')
+			source(src='/images/video.webm', type='video/webm')
+			source(src='/images/video.mp4', type='video/mp4')
+			source(src='/images/video.ogv', type='video/ogv')
+		.container.text-center
+			h1 Alexander Afzelius Puccini
+			h2.text-center Frontend
+				span#flipper.flip
+					span.step.step0.set utvecklare
+					span.step.step1 nybörjare
+	.section
+		.menu
+			ul
+				li
+					a#section-education Om mig
+				li
+					a#section-cv CV
+				li
+					a#section-projects Projekt
+				li
+					a#section-contact Kontakt
+	.section.section-header
+		.container
+			.row
+				.col-xs-12
+					h1.fill-text.text-center
+						|Jag vill göra internet snyggare, smidigare, och snabbare.
+					p.ingress.text-center
+						|Min ambition är att ligga i webbutvecklingens framkant. Med funktionell
+						| design, användarvänlighet och responsivitet vill jag förmedla bästa möjliga upplvelse.
+			.row.icons
+				.col-xs-2
+				.col-sm-3.text-center
+					p.size-icons
+						i.fa.fa-paint-brush.fa-2x.fill-text2
+					h5
+						|Design
+				.col-sm-2.text-center
+					p.size-icons
+						i.fa.fa-laptop.fa-2x.fill-text2
+						i.fa.fa-tablet.fa-2x.fill-text2(style="margin: 5px")
+						i.fa.fa-mobile.fa-2x.fill-text2
+					h5 Responsiv
+				.col-sm-3.text-center
+					p.size-icons
+						i.fa.fa-users.fa-2x.fill-text2
+					h5 Användarvänlighet
+				.col-sm-2
+
+	.section.section-education
+		.container
+			//- h1.text-center
+			//- 	|Utbildning
+			h1.fill-text.text-center
+				|Min story
+			p.ingress.text-center
+				|Min ambition är att ligga i webbutvecklingens framkant. Med funktionell
+				|design, användarvänlighet och responsivitet vill jag förmedla bästa möjliga upplvelse.
+				|design, användarvänlighet och responsivitet vill jag förmedla bästa möjliga upplvelse.
+			.row.cards
+				.col-md-4
+					.card-container
+						img.img-responsive(src="/images/teknik5.png" alt="Teknikhögskolan")
+						p Den första sidan jag någonsin
+							|skapat. Hemsidan var till min mor
+							|när hon ställde upp som kandidat
+							|till landstingsfullmäktige.
+							|när hon ställde upp som kandidat
+							|till landstingsfullmäktige.
+				.col-md-4
+					.card-container
+						img.img-responsive(src="/images/nackademin6.png" alt="Nackademin")
+						p Den första sidan jag någonsin
+							|skapat. Hemsidan var till min mor
+							|när hon ställde upp som kandidat
+							|till landstingsfullmäktige.
+							|när hon ställde upp som kandidat
+							|till landstingsfullmäktige.
+				.col-md-4
+					.card-container
+						img.img-responsive(src="/images/JJJJ.png" alt="Jakobsbergs Folkhögskola")
+						p Den första sidan jag någonsin
+							|skapat. Hemsidan var till min mor
+							|när hon ställde upp som kandidat
+							|till landstingsfullmäktige.
+							|när hon ställde upp som kandidat
+							|till landstingsfullmäktige.
+			.row
+				.col-md-4
+				.col-md-4.text-center
+					a.button.button-primary(href="/images/Alexander-Afzelius-cv.pdf") Fullständigt CV
+						i.fa.fa-angle-right
+				.col-md-4
+	.section.section-project
+		.container
+			h1.text-center
+				|Projekt
+			.col-md-7
+				img.img-responsive(src="/images/macWepage.png" alt="Project Gullmarsplan")
+			.col-md-5
+				h3 Gullmarsfrisörerna
+				p
+					|Uppdraget bestod i att
+					|skapa en hemsida till frisörsalongen Gullmarsfrisörerna. Jag ansvarade över alla delar - allt ifrån kundkontakt till databas - och gjordes i samband med min praktik 2014. Jag byggde även ett cms-system där ägaren själv enkelt kunde uppdatera både produkter och priser. 
+				a.button.button-primary Besök sidan 
+					i.fa.fa-angle-right
+	.section.section-contact.text-center
+		.container
+			.row
+				.col-xs-2
+				.col-xs-8
+					h1.fill-text.text-center
+						|Var inte blyg
+					p.ingress.text-center
+						|Du är välkommen att maila mig på
+						br
+						a#email.fill-text2 alex.afzelius@gmail.com
+						br
+						|eller
+						|fånga mig i följande sociala medier.
+					a(href="https://www.facebook.com/alex.puccini.98", target="_blank")
+						i.fa.fa-facebook.fa-3x.fill-text2
+					a(href="http://se.linkedin.com/in/afzeliuspuccini", target="_blank")
+						i.fa.fa-linkedin.fa-3x.fill-text2
+					a(href="https://github.com/fladderapa", target="_blank")
+						i.fa.fa-github.fa-3x.fill-text2
+				.col-xs-2
+	script.
+		window.sr = new scrollReveal();
+		$("#section-education").click(function() {$('html, body').animate({scrollTop: $(".section-education").offset().top}, 500);});
+		$("#section-cv").click(function() {$('html, body').animate({scrollTop: $(".section-education").offset().top}, 500);});
+		$("#section-projects").click(function() {$('html, body').animate({scrollTop: $(".section-project").offset().top}, 500);});
+		$("#section-contact").click(function() {$('html, body').animate({scrollTop: $(".section-contact").offset().top}, 500);});
+
+
+
+
+
+
+
+
+
+
+
+
+
