@@ -210,8 +210,8 @@ p{
 
 /*SECTIONS*/
 .section-story, .section-header, .section-contact, .section-project{
-	padding-top: 6.250em;
-	padding-bottom: 6.250em;
+	padding-top: 6em;
+	padding-bottom: 6em;
   padding-left: 0.313em;
   padding-right: 0.313em;
 }
@@ -265,7 +265,10 @@ margin-bottom: 20px;
 
 .maintron{
   	position: relative;
-  	
+}
+
+.card-container {
+  padding: 1em;
 }
 
 .maintron .container{
