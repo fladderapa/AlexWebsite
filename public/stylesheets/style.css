@@ -29,6 +29,7 @@ h1{
   font-size: 1.8em;
   margin-bottom: 0px;
   font-weight: 300;
+  padding-left: 15%;
 }
 
 
@@ -257,7 +258,7 @@ p{
 
 
 .cards{
-margin-top: 10px;
+margin-top: 1em;
 margin-bottom: 20px;
 }
 
@@ -268,7 +269,11 @@ margin-bottom: 20px;
 }
 
 .card-container {
-  padding: 1em;
+  padding: 2em;
+}
+
+.card-container img{
+  border-radius: 0.375em;
 }
 
 .maintron .container{
@@ -390,6 +395,13 @@ z-index: 1;
 
 }
 
+@media only screen and (min-width : 550px) {
+
+  .maintron h2{
+    padding-left: 0;
+  }
+}
+
 @media only screen and (min-width : 600px) {
 
   .maintron .container{
@@ -407,9 +419,6 @@ z-index: 1;
   
   }
 
-  .card-container {
-    padding: 40px;
-}
 
 .maintron h2{
     margin-top: 20px;
@@ -472,6 +481,11 @@ z-index: 1;
    .maintron .container{
     padding-top: 17%;
     padding-bottom: 12%;
+}
+
+.cards{
+  margin-top: 3.5em;
+  margin-bottom: 20px;
 }
 
   h1{
