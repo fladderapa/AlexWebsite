@@ -3,16 +3,17 @@ extends layout
 block content
 	.section.maintron
 		.filter
-		video#bgvid(loop autoplay controls="true" muted poster='/images/poster.jpg')
+		video#bgvid(loop autoplay controls="false" muted poster='/images/poster.jpg')
 			source(src='/images/video.webm', type='video/webm')
 			source(src='/images/video.mp4', type='video/mp4')
 			source(src='/images/video.ogv', type='video/ogv')
 		.container.text-center
 			h1 Alexander Afzelius Puccini
-			h2.text-center Frontend
-				span#flipper.flip
-					span.step.step0.set utvecklare
-					span.step.step1 nybörjare
+			div.text-container
+				h2.text-center Frontend
+					span#flipper.flip
+						span.step.step0.set utvecklare
+						span.step.step1 nybörjare
 	.section
 		.menu
 			ul
