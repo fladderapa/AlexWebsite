@@ -330,6 +330,13 @@ z-index: 1;
 }
 
 /*MENU*/
+/*.menu2{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #f7f7f7;
+}*/
+
 .menu{
 	height: 70px;
 	text-align: center !important;
@@ -363,7 +370,7 @@ z-index: 1;
 .menu a {
 	display:block;
    margin:0 0 0 1px;
-   padding: 25px 15px 25px 15px;
+   padding: 25px 10px 25px 10px;
    text-decoration:none;
   font-size: 18px;
   color: #636466;
@@ -409,12 +416,16 @@ z-index: 1;
 
 @media only screen and (min-width : 600px) {
 
+  .menu a {
+  padding: 25px 40px 25px 40px;
+}
+
   .flip {
     width: 200px;
   }
 
   .maintron .container{
-    padding-bottom: 21%;
+    padding-bottom: 15%;
   }
 
   .flip{
@@ -468,10 +479,6 @@ z-index: 1;
     padding-bottom: 18%;
 }
 
-.menu a {
-  padding: 25px 50px 25px 50px;
-}
-
   h1{
     font-size: 4em;
   }
@@ -495,6 +502,10 @@ z-index: 1;
 .cards{
   margin-top: 3.5em;
   margin-bottom: 20px;
+}
+
+.menu a {
+  padding: 25px 75px 25px 75px;
 }
 
   h1{
