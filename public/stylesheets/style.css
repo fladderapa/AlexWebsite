@@ -175,6 +175,10 @@ p{
 	padding-top: 20px;
 }
 
+.story{
+  font-size: 1.2em;
+  padding-top: 20px;
+}
 .icons{
   display: none;
 }
@@ -446,7 +450,7 @@ z-index: 1;
     font-size: 40px !important;
 }
 
-  .ingress{
+  .ingress, .story{
     font-size: 1.4em;
   }
 
