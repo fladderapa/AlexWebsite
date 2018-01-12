@@ -5,7 +5,7 @@ width: 100%;
 
 h1{
   font-weight: 300;
-  font-size: 2.8em;
+  font-size: 2.3em;
   font-family: 'Lato', sans-serif;
   font-style: normal;
 
@@ -401,6 +401,14 @@ z-index: 1;
   text-decoration: none !important;
   color: #636466 !important;
  }
+
+@media only screen and (min-width : 370px) {
+
+  h1 {
+    font-size: 2.8em;
+  }
+
+}
 
 @media only screen and (min-width : 450px) {
 
