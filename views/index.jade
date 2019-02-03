@@ -52,36 +52,39 @@ block content
 						i.fa.fa-users.fa-2x.fill-text2
 					h5 Användarvänlighet
 				.col-sm-2
-
 	.section.section-education
 		.container
-			//- h1.text-center
-			//- 	|Utbildning
 			h1.fill-text.text-center
 				|Min story
 			p.story.text-center
 				|Bakom mig har jag flera år som croupier på Casino Cosmopol och 
 				|framför mig vilar en terräng av hemsidor och programmering. Jag har  
 				|tidigare studerat både applikationsutveckling.NET och skrivandets  
-				|konst men har nu valt att inrikta mig på front-end. Till hösten 2018 
+				|konst men har nu valt att inrikta mig på front-end. Till våren 2019 
 				|söker jag praktik och om du är nyfiken på mig så vilar mitt cv här 
-				|under. Annars nås jag på alla plattformar, hela tiden, överallt. 
+				|under. Annars nås jag på alla plattformar, överallt, hela tiden. 
 			.row.cards
 				.col-md-4
 					.card-container
-						img.img-responsive.center-block(src="/images/teknik5.png" alt="Teknikhögskolan")
+						img#thImg.img-responsive.center-block(src="/images/teknik5.png" alt="Teknikhögskolan")
 						p Jag studerade Systemutveckling:NET på yrkeshögskolan Teknikhögskolan i Stockholm. 
 							|Under utbildningen tog vi del av allt i från databaser till att arbeta i agilt.
 				.col-md-4
 					.card-container
-						img.img-responsive.center-block(src="/images/nackademin6.png" alt="Nackademin")
+						img#nackaImg.img-responsive.center-block(src="/images/nackademin6.png" alt="Nackademin")
 						p Jag studerar just nu front-end på Nackademin. Utbildningen sträcker sig till år 2019 och jag söker
 							|just nu praktik till hösten år 2018.
 				.col-md-4
 					.card-container
-						img.img-responsive.center-block(src="/images/JJJJ.png" alt="Jakobsbergs Folkhögskola")
+						img#jfImg.img-responsive.center-block(src="/images/JJJJ.png" alt="Jakobsbergs Folkhögskola")
 						p Jag tog del av skrivarutbildning på Jakobsbergs folkhögskola som gav en bred översikt 
 							|i litterär gestaltning och där jag fördjupade min förmåga till ett eget uttryck.
+				#thModal.modal
+					img#img01.modal-content
+				#nackaModal.modal
+					img#img02.modal-content
+				#jfModal.modal
+					img#img03.modal-content
 			.row
 				.col-md-4
 				.col-md-4.text-center
@@ -128,6 +131,43 @@ block content
 		$("#section-cv").click(function() {$('html, body').animate({scrollTop: $(".section-education").offset().top}, 500);});
 		$("#section-projects").click(function() {$('html, body').animate({scrollTop: $(".section-project").offset().top}, 500);});
 		$("#section-contact").click(function() {$('html, body').animate({scrollTop: $(".section-contact").offset().top}, 500);});
+	script.
+
+		var thModal = document.getElementById('thModal');
+		var thImg = document.getElementById('thImg');
+		var thModalImg = document.getElementById("img01");
+
+		thImg.onclick = function(){
+			thModal.style.display = "block";
+			thModalImg.src = '/images/teknikhogskolan.jpg';
+		}
+		thModal.onclick = function() {
+		thModal.style.display = "none";
+		}
+
+		var nackaModal = document.getElementById('nackaModal');
+		var nackaImg = document.getElementById('nackaImg');
+		var nackaModalImg = document.getElementById("img02");
+
+		nackaImg.onclick = function(){
+			nackaModal.style.display = "block";
+			nackaModalImg.src = '/images/nackademin.png';
+		}
+		nackaModal.onclick = function() {
+		nackaModal.style.display = "none";
+		}
+
+		var jfModal = document.getElementById('jfModal');
+		var jfImg = document.getElementById('jfImg');
+		var jfModalImg = document.getElementById("img03");
+
+		jfImg.onclick = function(){
+			jfModal.style.display = "block";
+			jfModalImg.src = '/images/jakobsbergsFolkhogskola.png';
+		}
+		jfModal.onclick = function() {
+		jfModal.style.display = "none";
+		}
 
 
 
